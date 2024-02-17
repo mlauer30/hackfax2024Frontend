@@ -2,8 +2,9 @@ import { useState } from 'react'
 import { useRoutes } from "react-router-dom";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-
+import Profile from './components/Profile';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function App() {
      * new page
      * edit page
     */
-    { path: "/", element: <div>home</div> },
+    { path: "/", element: <Profile/>},
     { path: "/view/:id", element: <>page</>},
     { path: "/new", element: <div>new</div> },
     { path: "/edit/:id", element: <div>edit</div>},
@@ -22,7 +23,7 @@ function App() {
   ]);
   return (
     <>
-      {routes}
+    {routes}
     </>
   )
 }
