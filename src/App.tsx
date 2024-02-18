@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import { useRoutes } from "react-router-dom";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import Profile from './components/Profile';
+import { CardTitle, CardDescription, CardContent, Card } from "@/components/ui/card"
+import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import { useRoutes } from "react-router-dom"
+import { useState } from "react"
+import "./App.css"
+import ViewProfile from "./components/pages/ViewProfile"
 
-function App() {
-  // JSON 
-  
- const sample =
+export default function App() {
+
+  const sample =
       [{
         "Name": "MARK",
         "CLASSES": [
@@ -38,7 +37,7 @@ function App() {
           }
         ]
       }]
-      const [user ,setUser] = useState([sample]);
+      // const [user ,setUser] = useState([sample]);
     
   
   
@@ -53,17 +52,16 @@ function App() {
      * new page
      * edit page
     */
-    { path: "/", element: <Profile data = {user}/>},
+    { path: "/", element: <ViewProfile />},
     { path: "/view/:id", element: <>page</>},
     { path: "/new", element: <div>new</div> },
     { path: "/edit/:id", element: <div>edit</div>},
     { path: "*", element: <div>404 NOT FOUND</div> },
+
   ]);
   return (
-    <>
-    {routes}
-    </>
+   <>
+   <ViewProfile/>
+   </>
   )
 }
-
-export default App
