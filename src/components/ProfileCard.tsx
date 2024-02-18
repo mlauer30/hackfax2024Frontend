@@ -1,7 +1,7 @@
 import { CardTitle, CardDescription, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import "./App.css"
+// import "./App.css"
 
 export default function App() {
   return (

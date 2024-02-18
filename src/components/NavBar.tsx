@@ -20,13 +20,13 @@ export default function NavBar() {
             <TabsTrigger value="settings">Settings</TabsTrigger>
           </TabsList>
           <TabsContent value="profile">
-            <Link className="flex items-center gap-2 text-lg font-semibold sm:text-base mr-4" href="#">
+            <Link className="flex items-center gap-2 text-lg font-semibold sm:text-base mr-4" href="/90078">
               <Package2Icon className="w-6 h-6" />
               <span className="sr-only">Acme Inc</span>
             </Link>
           </TabsContent>
           <TabsContent value="study-buddies">
-            <Link className="font-bold" href="#">
+            <Link className="font-bold" href="/5456454">
               Profile
             </Link>
           </TabsContent>

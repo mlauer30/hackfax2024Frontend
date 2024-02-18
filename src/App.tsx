@@ -5,6 +5,8 @@ import { useRoutes } from "react-router-dom"
 import { useState } from "react"
 import "./App.css"
 import ViewProfile from "./components/pages/ViewProfile"
+import ProfileCard from "./components/ProfileCard"
+import ViewJSON from "./components/pages/ViewJSON"
 
 export default function App() {
 
@@ -61,6 +63,8 @@ export default function App() {
   ]);
   return (
    <>
+   {/* <ViewJSON /> */}
+   <ProfileCard/> 
    <ViewProfile/>
    </>
   )

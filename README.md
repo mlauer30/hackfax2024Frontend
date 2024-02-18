@@ -1,39 +1,40 @@
-# Day 2 - Frontend 
-**Accomplished**
-- ✅Decided on Bootstrap for styling
-- ✅Created JSON user
-- ✅Displayed dummy to react frontend
-- :x: Start buddies page
+# Study Buddy
 
-**Final Day Goals**
-- Complete remaining pages for frontend
-	- Each page should read from backend
-	- Pages should be able to post to backend
-	- Buddies Page: Define JSON of top matches
-	- Profile Page: read content to placeholders
----
-# Day 1 - Frontend
-**Accomplished**
-- Low fidelity mockup / skeleton of frontend in bootstrap.
-- Planned general look and main functionality of react web app.
-- Prioritized features of first commit for a minimally viable app.
-	- Section users off based on courses picked for their profile
-	- AI will draw comparisons based on interests selected for each user. Report is built of best matched users with percentage score.
->Tcc created this repo for a vite react app.
- 
- **Day 2 Goals**
- - Skeleton bootstrap build
-	 - Navigation: Profile | Buddies (top matches) | Lookup
- - Define expected JSON format for a user 
-	 - Create some dummy data to test on the frontend
- - Determine what information will be viewable in Buddies (top matches) page. 
+## Project Information
+A platform where users can connect with study partners through a user-friendly dashboard.
+Offers a comprehensive experience for users, featuring an activity tracker for time studied, a metric system, and a group chat feature. Scoring system pairs users up based on criteria that they specify. 
 
+### System Dependencies
+This project requires:
+```bash
+nodejs
+npm
+nvm
+```
 
-# React + Vite
+### Building and Installing the package
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Clone the repository:
+```bash
+$ git clone https://gitlab.com/the-cat-collective/hackathon/study_buddy_frontend
+```
+2. Navigate to the Project Directory
+```bash
+$ cd study_buddy_frontend
+```
+3. Install dependencies
+```bash
+$ npm install
+```
+4. Start the dev server
+```bash
+$ npm dev run
+```
 
-Currently, two official plugins are available:
+## Licensing
+* This project is licensed under the BSD 3-Clause License. Please refer to the [LICENSE](LICENSE) file for the full text of the project's license.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* For licensing information related to first and third-party components used in this project, please refer to the [LICENSING](LICENSING.md) file.
+
+## Disclaimer
+The code within this repository is provided "as-is", and no former, current, or future owners of this project and/or repository are liable for any modifications or changes undertaken to the script that violate Spotify's terms of use.

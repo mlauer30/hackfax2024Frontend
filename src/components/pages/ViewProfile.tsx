@@ -140,7 +140,6 @@ export default function ViewProfile() {
           </TabsList>
           <TabsContent value="profile">
        
-           
               <span className="sr-only">Acme Inc</span>
            
           </TabsContent>
