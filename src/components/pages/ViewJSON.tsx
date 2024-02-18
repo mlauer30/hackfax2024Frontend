@@ -5,6 +5,7 @@ const YourComponent = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+<<<<<<< HEAD
     const fetchData = () => {
         
           
@@ -20,6 +21,22 @@ const YourComponent = () => {
 
     fetchData();
   }, []);// Empty dependency array to run the effect only once
+=======
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://localhost:5000/return'); // Replace with your API endpoint
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array to run the effect only once
+>>>>>>> 80418193d02277a4276bb969fcd186afb74205aa
 
   return (
     <div>
@@ -35,4 +52,8 @@ const YourComponent = () => {
   );
 };
 
+<<<<<<< HEAD
 export default YourComponent;
+=======
+export default YourComponent;
+>>>>>>> 80418193d02277a4276bb969fcd186afb74205aa
