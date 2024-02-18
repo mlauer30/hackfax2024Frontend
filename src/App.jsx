@@ -7,6 +7,44 @@ import './App.css'
 import Profile from './components/Profile';
 
 function App() {
+  // JSON 
+  
+ const sample =
+      [{
+        "Name": "MARK",
+        "CLASSES": [
+          {
+            "name": "MATH112",
+            "partners": "MATTHEW",
+            "time": [
+              {"start": "13:00", "end": "15:00"}
+            ]
+          },
+          {
+            "name": "CS201",
+            "partners": "",
+            "time": [
+              {"start": "10:00", "end": "12:00"},
+              {"start": "14:00", "end": "16:00"}
+            ]
+          },
+          {
+            "name": "PY101",
+            "partners": "",
+            "time": [
+              {"start": "9:00", "end": "11:00"},
+              {"start": "15:00", "end": "17:00"}
+            ]
+          }
+        ]
+      }]
+      const [user ,setUser] = useState([sample]);
+    
+  
+  
+
+
+  
   // const [count, setCount] = useState(0)
   const routes = useRoutes([
     /*
@@ -15,7 +53,7 @@ function App() {
      * new page
      * edit page
     */
-    { path: "/", element: <Profile/>},
+    { path: "/", element: <Profile data = {user}/>},
     { path: "/view/:id", element: <>page</>},
     { path: "/new", element: <div>new</div> },
     { path: "/edit/:id", element: <div>edit</div>},
