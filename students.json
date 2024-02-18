@@ -1,0 +1,27 @@
+{
+    "students": [
+      {
+        "Name": "Student_1",
+        "Major": "Mathematics",
+        "Courses": ["MATH200", "BIO105"],
+        "Partner": ["Student_2"]
+
+
+      },
+      {
+        "Name": "Student_2",
+        "Major": "Physics",
+        "Courses": ["PHYS101", "MATH408", "ENG210"],
+        "Partner": ["Student_2"]
+
+      },
+      {
+        "Name": "Student_3",
+        "Major": "Engineering",
+        "Courses": ["PHYS339", "ENG102", "BIO220", "ENG390", "MATH112"],
+        "Partner": ["Student_2"]
+
+      }
+    ]
+  }
+  
