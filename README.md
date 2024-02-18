@@ -1,9 +1,9 @@
 # Day 2 - Frontend 
 **Accomplished**
-✅Decided on Bootstrap for styling
-✅Created JSON user
-✅Displayed dummy to react frontend
-:x: Start buddies page
+- ✅Decided on Bootstrap for styling
+- ✅Created JSON user
+- ✅Displayed dummy to react frontend
+- :x: Start buddies page
 
 **Final Day Goals**
 - Complete remaining pages for frontend
