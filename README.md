@@ -1,3 +1,17 @@
+# Day 2 - Frontend 
+**Accomplished**
+✅Decided on Bootstrap for styling
+✅Created JSON user
+✅Displayed dummy to react frontend
+:x: Start buddies page
+
+**Final Day Goals**
+- Complete remaining pages for frontend
+	- Each page should read from backend
+	- Pages should be able to post to backend
+	- Buddies Page: Define JSON of top matches
+	- Profile Page: read content to placeholders
+---
 # Day 1 - Frontend
 **Accomplished**
 - Low fidelity mockup / skeleton of frontend in bootstrap.
