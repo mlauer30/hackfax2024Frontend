@@ -8,6 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Class from './Class';
+import Image from 'react-bootstrap/Image';
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import CardBuilder from './CardBuilder';
+
 function Profile({data}){
   /*
   *
@@ -34,7 +40,8 @@ function Profile({data}){
             "time": [
               {"start": "10:00", "end": "12:00"},
               {"start": "14:00", "end": "16:00"}
-            ]
+            ],
+            "score":""
           },
           {
             "name": "PY101",
@@ -42,7 +49,8 @@ function Profile({data}){
             "time": [
               {"start": "9:00", "end": "11:00"},
               {"start": "15:00", "end": "17:00"}
-            ]
+            ],
+            "score":""
           }
         ]
       },
@@ -55,7 +63,8 @@ function Profile({data}){
             "partners": ["EMMA"],
             "time": [
               {"start": "13:00", "end": "15:00"}
-            ]
+            ],
+            "score":""
           },
           {
             "name": "CS201",
@@ -63,7 +72,8 @@ function Profile({data}){
             "time": [
               {"start": "10:00", "end": "12:00"},
               {"start": "14:00", "end": "16:00"}
-            ]
+            ],
+            "score":""
           },
           {
             "name": "PY101",
@@ -71,13 +81,31 @@ function Profile({data}){
             "time": [
               {"start": "9:00", "end": "11:00"},
               {"start": "15:00", "end": "17:00"}
-            ]
+            ],
+            "score":""
           }
         ]
       }
     ]
   };
-  
+  // //total score
+  // "scores":
+  // {
+  //   // detailed score
+  //   "classes":[{
+  //     "PY101
+  //     ":"5",
+  //     "MATH":"2",
+  // },
+  // {
+
+  // }],
+  //   "time":"80",
+  //   "major"  
+  //   // classes - .2x
+  //   // compatibility - .2x 
+  //   // time avail - .2x
+  // }  
   
   const [processedData] = useState(() => {
     return initialData.users.map(user => {
@@ -109,22 +137,15 @@ function Profile({data}){
     });
   });
 
-  return (
-    <div>
-      {processedData}
-    </div>
-  );
-import Image from 'react-bootstrap/Image';
-// import SideNavbar from './SideNavbar';
-import Card from 'react-bootstrap/Card'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import CardBuilder from './CardBuilder';
-
-function Profile(){
+  // return (
+  //   <div>
+  //     {processedData}
+  //   </div>
+  // );
+// function Profile(){
 
   const cards = [
-    { title: 'Card 1', content: 'Content for Card 1' },
+    { title: 'Partner 1 | Course Name', content: 'Availability, Major' },
     { title: 'Card 2', content: 'Content for Card 2' },
     { title: 'Card 3', content: 'Content for Card 3' },
     // Add more card data as needed
@@ -134,7 +155,7 @@ return (
   <>
       <Navbar expand="sm" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">Study Buddy</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -156,13 +177,16 @@ return (
         </Container>
     </Navbar>
     <div>
-        {<Image style={{ padding: "1%" }} width="171" height="180" src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" roundedCircle />}
+        {<Image style={{ padding: "1%" }} width="171" height="180" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" roundedCircle />}
+        <p>User Name</p>
     </div>
     
     <Container>
       <CardBuilder cardData={cards} />
     </Container>
-    
+    <div>
+      {processedData}
+    </div>
     
     </>
   
