@@ -5,6 +5,7 @@ import { useRoutes } from "react-router-dom"
 import { useState } from "react"
 import "./App.css"
 import ViewProfile from "./components/pages/ViewProfile"
+import ViewJSON from "./components/pages/ViewJSON"
 
 export default function App() {
 
@@ -61,7 +62,8 @@ export default function App() {
   ]);
   return (
    <>
-   <ViewProfile/>
+   {/* <ViewProfile/> */}
+   <ViewJSON/>
    </>
   )
 }
