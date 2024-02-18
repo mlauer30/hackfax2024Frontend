@@ -5,10 +5,7 @@ import { useRoutes } from "react-router-dom"
 import { useState } from "react"
 import "./App.css"
 import ViewProfile from "./components/pages/ViewProfile"
-<<<<<<< HEAD
 import ProfileCard from "./components/ProfileCard"
-=======
->>>>>>> 80418193d02277a4276bb969fcd186afb74205aa
 import ViewJSON from "./components/pages/ViewJSON"
 
 export default function App() {
@@ -66,14 +63,9 @@ export default function App() {
   ]);
   return (
    <>
-<<<<<<< HEAD
    {/* <ViewJSON /> */}
    <ProfileCard/> 
    <ViewProfile/>
-=======
-   {/* <ViewProfile/> */}
-   <ViewJSON/>
->>>>>>> 80418193d02277a4276bb969fcd186afb74205aa
    </>
   )
 }
